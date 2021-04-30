@@ -1,0 +1,94 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap");
+
+.image-route {
+  width: 100%;
+
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(43, 42, 46),
+    #9a95a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #333232,
+    #1f1f22
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.images {
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-div:first-of-type {
+  display: none;
+}
+form {
+  margin-top: 0.5rem;
+}
+input {
+  font-family: "Montserrat", sans-serif;
+  min-width: 50%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 2rem auto 1rem;
+  display: flex;
+  justify-content: center;
+}
+.search-btn {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  border: none;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.search-btn:hover {
+  transform: scale(1.1);
+}
+
+.nasa-images {
+  margin: 0.8rem 1.5rem;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+.nasa-images:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 548px) {
+  .images {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .image-div {
+    margin: 0.8rem 1.5rem;
+    max-width: 400px;
+    max-height: 300px;
+  }
+  .nasa-images {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
